@@ -17,4 +17,4 @@ jobs:
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "buabinebisd" --password-stdin
         docker image build -t buabinebisd/lasttemmer:latest .
-        docker push buabinebisd/lasttemer:latest
+        docker push buabinebisd/lasttemmer:latest

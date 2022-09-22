@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "buabinebisd" --password-stdin
-        docker image build -t siraculanulsodluk/kassarimold:latest .
-        docker push siraculanulsodluk/kassarimold:latest
+        docker image build -t siraculanulsodluk/lepi:latest .
+        docker push siraculanulsodluk/lepi:latest

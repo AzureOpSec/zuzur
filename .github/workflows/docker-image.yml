@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "${{ secrets.DOCKERPW }}" | docker login -u "yeksorservice" --password-stdin
-        docker image build -t yeksorservice/latestsrv:latest .
-        docker push yeksorservice/latestsrv:latest
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "jernekter" --password-stdin
+        docker image build -t jernekter/ubuntusr:latest .
+        docker push jernekter/ubuntusr:latest

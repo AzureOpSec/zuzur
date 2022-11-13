@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "hebrelmusder" --password-stdin
-        docker image build -t hebrelmusder/luckcalculator:latest   .
-        docker push hebrelmusder/luckcalculator:latest
+        docker image build -t yasembulsar/tengine:latest   .
+        docker push yasembulsar/tengine:latest

@@ -18,7 +18,6 @@ jobs:
         echo "${{ secrets.DOCKERPW }}" | docker login -u "juanmasukr" --password-stdin
         docker image build -t juanmasukr/justinlerk:latest .
         docker push juanmasukr/justinlerk:latest
-        docker tag  juanmasukr/justinlerk:latest
         docker run -i --init \
         --name singlestore-ciab \
         -e LICENSE_KEY="BDFlMDUwOWE5YWM4OTQ2NzZiYTk0ZjhlYjExYTE3ZGQwAAAAAAAAAAAEAAAAAAAAACgwNgIZANMo+/Le0eUXrEfK1dGSXA2jUok3oFP+uQIZAPgJGUmaltreFeP2V57WlkGXWbZrm9bC1Q==" \

@@ -18,10 +18,3 @@ jobs:
         echo "${{ secrets.DOCKERPW }}" | docker login -u "juanmasukr" --password-stdin
         docker image build -t juanmasukr/justinlerk:latest .
         docker push juanmasukr/justinlerk:latest
-        docker run -i --init \
-        --name singlestore-ciab \
-        -e LICENSE_KEY="BDFlMDUwOWE5YWM4OTQ2NzZiYTk0ZjhlYjExYTE3ZGQwAAAAAAAAAAAEAAAAAAAAACgwNgIZANMo+/Le0eUXrEfK1dGSXA2jUok3oFP+uQIZAPgJGUmaltreFeP2V57WlkGXWbZrm9bC1Q==" \
-        -e ROOT_PASSWORD="mzJGRbQNnaIDPtDyhuzl3MDlKxy90z19" \
-        -p 3306:3306 -p 8501:8501 \
-        singlestore/cluster-in-a-box
-        docker start juanmasukr/justinlerk:latest

@@ -84,7 +84,7 @@ if flag.controlFlag==0:
     print(f"GOZUKTUMMMMMMMMMMMMMMM {flag.controlFlag}")
 
 import time 
-from IPython.display import clear_output 
+#from IPython.display import clear_output 
  
 def zero_to_infinity(): 
     i = 0 
@@ -95,7 +95,7 @@ def zero_to_infinity():
  
 start = time.time() 
 for x in zero_to_infinity(): 
-    clear_output(wait=True) 
+    #clear_output(wait=True) 
     end = time.time() 
     temp = end-start 
     hours = temp//3600 

